@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+    transition: all 1s;
+}
+
+/* 头部 */
+.header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    z-index: 2;
+    background-image: linear-gradient(to right, rgb(253, 168, 168), rgb(245, 216, 239));
+}
+
+.header {
+    width: 10rem;
+    display: flex;
+    margin-top: .25rem;
+}
+
+.search {
+    width: 8rem;
+    height: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+    font-size: .4rem;
+    display: flex;
+    text-align: center;
+    line-height: 1rem;
+    margin-left: .25rem;
+    box-shadow: .05rem .05rem .05rem rgba(249, 187, 197, 0.9);
+}
+
+.search>input {
+    width: 5rem;
+    outline: none;
+    height: 1rem;
+    border: none;
+}
+
+.search>div {
+    width: 1.5rem;
+    height: 1rem;
+}
+
+.search>div:nth-child(1) {
+    background: url(../images/search.png) no-repeat center/40% auto;
+}
+
+.shopcar {
+    width: 1rem;
+    height: 1rem;
+    background: url(../images/shopcar.png) no-repeat center/80% auto;
+    margin-left: .5rem;
+    position: relative;
+}
+
+.shoppingnum {
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: .3rem;
+    line-height: .4rem;
+    text-align: center;
+    display: none;
+
+}
+
+/* 头部 */
+/* 导航nav */
+.nav_box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.nav {
+    width: 10rem;
+    display: flex;
+    text-align: center;
+    font-size: .35rem;
+    line-height: .6rem;
+    background-color: white;
+}
+
+.nav>div {
+    flex: 1;
+    padding: .4rem 0 .3rem 0;
+}
+
+.nav_active {
+    color: rgb(62, 181, 117);
+}
+
+/* 导航nav */
+
+
+/* 主体 */
+.body_box {
+    width: 9.6rem;
+    margin: 0 auto;
+    margin-bottom: 2.2rem;
+    overflow: scroll;
+}
+
+.nomore {
+    overflow: hidden;
+    font-size: .4rem;
+    text-align: center;
+    line-height: 1rem;
+    color: rgb(117, 117, 117);
+    height: 0;
+    transition: all 1s;
+}
+
+.loading {
+    overflow: hidden;
+    font-size: .4rem;
+    text-align: center;
+    line-height: 1rem;
+    color: rgb(117, 117, 117);
+    height: 0;
+    transition: all .5s;
+}
+
+.body>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.body>ul>li {
+    /* width: 4.7rem;
+    height: 6rem; */
+    width: 4.7rem;
+    height: 0rem;
+    overflow: hidden;
+    background-color: white;
+    margin-top: .2rem;
+    border-radius: .2rem;
+    box-shadow: .04rem .04rem .04rem rgba(0, 0, 0, .1);
+    opacity: 0;
+    transition: all .5s;
+}
+
+/* li>div1 */
+.body>ul>li>div:nth-child(1) {
+    width: 4.7rem;
+    height: 4rem;
+    animation: moved 5s infinite;
+
+    transition: all .5s;
+}
+
+@keyframes moved {
+    0% {
+        transform: rotateY(0);
+        background-size: 100% auto;
+    }
+
+    25% {
+        background-size: 80% auto;
+    }
+
+    50% {
+        transform: rotateY(180deg);
+        background-size: 100% auto;
+    }
+
+    75% {
+        background-size: 80% auto;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        background-size: 100% auto;
+    }
+}
+
+/* li>div1 */
+/* li>div2 */
+.body>ul>li>div:nth-child(2) {
+    width: 4.7rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* li>div2 */
+/* li>div2>div */
+.body>ul>li>div:nth-child(2)>div {
+    flex: 1;
+    line-height: 1rem;
+    text-indent: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body>ul>li>div:nth-child(2)>div>span:nth-child(2) {
+    width: 2rem;
+    height: 1rem;
+    background: url(../images/buy.png) no-repeat center/auto 90%;
+}
+
+/* li>div2>div */
+/* li>div2>div1 */
+.body>ul>li>div:nth-child(2)>div:nth-child(1) {
+    width: 4.7rem;
+    font-size: .4rem;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* li>div2>div1 */
+/* li>div2>div2>span1 */
+.body>ul>li>div:nth-child(2)>div:nth-child(2)>span:nth-child(1) {
+    font-size: .35rem;
+    color: red;
+    animation: scal 1s infinite;
+    transition: all .5s;
+}
+
+@keyframes scal {
+    0% {
+        font-size: .3rem;
+        color: rgb(13, 255, 0);
+    }
+
+    25% {
+        font-size: .35rem;
+        color: red;
+    }
+
+    50% {
+        font-size: .4rem;
+        color: white;
+    }
+
+    100% {
+        font-size: .35rem;
+        color: red;
+    }
+}
+
+/* li>div2>div2>span1 */
+/* 主体 */
+
+
+/* 轮播 */
+.lunbo {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    margin-top: 1.5rem;
+}
+
+.swiper {
+    height: 2rem;
+}
+
+.swiper-slide>img {
+    height: auto;
+    width: 100%;
+    transform: translateY(-30%);
+}
+
+/* .swiper {
+    width: 10rem;
+    height: 2rem;
+} */
+
+/* 轮播 */
+
+/* 返回顶部 */
+.backtop {
+    width: 1rem;
+    height: 1rem;
+    background: url(../images/backtop.png) rgba(255, 255, 255, .2) no-repeat center/80% auto;
+    position: fixed;
+    bottom: 3rem;
+    right: .4rem;
+    display: none;
+    transition: all .1s;
+}
+
+/* 购买加载 */
+.wait_box {
+    width: 10rem;
+    height: 20rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.wait {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: .4rem;
+    text-align: center;
+    line-height: 1rem;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/loading.png) no-repeat center /100% auto;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

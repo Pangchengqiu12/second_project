@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/* 头部 */
+.header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 .04rem .05rem rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    width: 10rem;
+    background-color: rgb(62, 181, 117);
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.nickname {
+    font-size: .6rem;
+}
+
+/* 头部 */
+/* 导航nav */
+.nav_box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.nav {
+    width: 10rem;
+    display: flex;
+    text-align: center;
+    font-size: .35rem;
+    line-height: .6rem;
+    background-color: white;
+}
+
+.nav>div {
+    flex: 1;
+    padding: .4rem 0 0.3rem 0;
+}
+
+.nav_active {
+    color: rgb(62, 181, 117);
+}
+
+/* 导航nav */
+/* 主体 */
+.bodyPart {
+    margin-top: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodyPart>ul {
+    width: 9.6rem;
+    background-color: white;
+    font-size: .5rem;
+    text-indent: 2rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.bodyPart>ul>li {
+    line-height: 1.5rem;
+    border-bottom: .0133rem rgb(237, 237, 237) solid;
+    color: rgb(103, 103, 103);
+}
+
+.bodyPart>div {
+    width: 4rem;
+    text-align: center;
+    font-size: .6rem;
+    line-height: 1.6rem;
+    background-color: rgb(62, 181, 117);
+    color: white;
+    border-radius: .8rem;
+    box-shadow: .04rem .04rem .05rem rgba(0, 0, 0, 0.2);
+    margin-top: .5rem;
+}
+
+.bodyPart>ul:nth-child(1) {
+    margin-bottom: .2rem;
+}
+
+.titlename {
+    font-size: .7rem;
+    line-height: 2rem;
+    color: white;
+}
+
+/* 主体 */

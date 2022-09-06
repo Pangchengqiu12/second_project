@@ -1,0 +1,226 @@
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+.regist_box {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+.regist_box>div:nth-child(1) {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(62, 181, 117);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.regist_box>div:nth-child(1)>div {
+    font-size: .9rem;
+    line-height: 3rem;
+    display: flex;
+}
+
+.regist_box>div:nth-child(1)>div>div:nth-child(1) {
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/back.png) no-repeat center/60% auto;
+}
+
+.regist_box>div:nth-child(1)>span:nth-child(2) {
+    font-size: .4rem;
+}
+
+.regist_box>div:nth-child(2) {
+    width: 9rem;
+    height: 14rem;
+    border: .0133rem #ddd solid;
+    border-radius: .3rem;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: .0667rem .0667rem .0667rem rgba(0, 0, 0, .1);
+}
+
+.regist_form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regist_form>input {
+    width: 7rem;
+    height: 1.3rem;
+    border: .0133rem #ddd solid;
+    outline: none;
+    border-radius: .6rem;
+}
+
+/* user-input */
+.regist_form>div:nth-child(1) {
+    width: 7rem;
+    height: 1.3rem;
+    border: .0133rem #ddd solid;
+    outline: none;
+    border-radius: .6rem;
+    display: flex;
+    color: rgb(107, 107, 107);
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+.regist_form>div:nth-child(1)>span {
+    flex: 1;
+}
+
+.regist_form>div:nth-child(1)>input {
+    border: none;
+    width: 5rem;
+    outline: none;
+}
+
+/* user-input */
+/* user-nikname */
+.regist_form>div:nth-child(2) {
+    width: 7rem;
+    height: 1.3rem;
+    border: .0133rem #ddd solid;
+    outline: none;
+    border-radius: .6rem;
+    display: flex;
+    color: rgb(107, 107, 107);
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+.regist_form>div:nth-child(2)>span {
+    flex: 1;
+}
+
+.regist_form>div:nth-child(2)>input {
+    border: none;
+    width: 5rem;
+    outline: none;
+}
+
+/* user-nikname */
+/* user-password */
+.regist_form>div:nth-child(3) {
+    width: 7rem;
+    height: 1.3rem;
+    border: .0133rem #ddd solid;
+    outline: none;
+    border-radius: .6rem;
+    display: flex;
+    color: rgb(107, 107, 107);
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+.regist_form>div:nth-child(3)>span {
+    flex: 1;
+}
+
+.regist_form>div:nth-child(3)>input {
+    border: none;
+    width: 5rem;
+    outline: none;
+}
+
+/* user-password */
+/* user-repassword */
+.regist_form>div:nth-child(4) {
+    width: 7rem;
+    height: 1.3rem;
+    border: .0133rem #ddd solid;
+    outline: none;
+    border-radius: .6rem;
+    display: flex;
+    color: rgb(107, 107, 107);
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+.regist_form>div:nth-child(4)>span {
+    flex: 1;
+}
+
+.regist_form>div:nth-child(4)>input {
+    border: none;
+    width: 5rem;
+    outline: none;
+}
+
+/* user-repassword */
+/* user-email */
+.regist_form>div:nth-child(5) {
+    width: 7rem;
+    height: 1.3rem;
+    border: .0133rem #ddd solid;
+    outline: none;
+    border-radius: .6rem;
+    display: flex;
+    color: rgb(107, 107, 107);
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+.regist_form>div:nth-child(5)>span {
+    flex: 1;
+}
+
+.regist_form>div:nth-child(5)>input {
+    border: none;
+    width: 5rem;
+    outline: none;
+}
+
+/* user-email */
+.regist_form>input {
+    color: white;
+    background-color: rgb(62, 181, 117);
+    margin-top: .3rem;
+}
+
+.regist_form>div:nth-child(2) {
+    margin-top: .3rem;
+}
+
+.regist_form>div:nth-child(3) {
+    margin-top: .3rem;
+}
+
+.regist_form>div:nth-child(4) {
+    margin-top: .3rem;
+}
+
+.regist_form>div:nth-child(5) {
+    margin-top: .3rem;
+}
+
+.change::placeholder {
+    color: red;
+}
+
+.regist_form>input[type=button] {
+    font-size: .45rem;
+}

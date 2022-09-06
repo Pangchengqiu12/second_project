@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    width: 10rem;
+    background-color: rgb(62, 181, 117);
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    line-height: 2rem;
+    font-size: .6rem;
+}
+
+.type {
+    width: 4rem;
+    height: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: .04rem .04rem .04rem rgba(0, 0, 0, .1);
+    border-radius: .1333rem;
+    margin-left: .5rem;
+}
+
+.type>div:nth-child(1) {
+    line-height: 1rem;
+    font-size: .4rem;
+    width: 2.6rem;
+    font-weight: 550;
+}
+
+.type>div:nth-child(2) {
+    width: .0133rem;
+    height: .5rem;
+    background-color: white;
+}
+
+.type>div:nth-child(3) {
+    width: 1.3rem;
+    height: 1rem;
+    background: url(../images/ico.png) no-repeat center/45% auto;
+}
+
+
+
+.time {
+    display: flex;
+}
+
+.time>div:nth-child(1) {
+    width: 3rem;
+    height: 1rem;
+    font-size: .38rem;
+    line-height: 1rem;
+    margin-left: .55rem;
+    text-align: left;
+    text-indent: .1333rem;
+    background: url(../images/class.png) no-repeat 2.2rem center/ 10% auto;
+}
+
+.time>div:nth-child(2) {
+    font-size: .36rem;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, .8);
+    width: 3rem;
+}
+
+.time>div:nth-child(3) {
+    font-size: .36rem;
+    line-height: 1rem;
+    margin-left: .2rem;
+    color: rgba(255, 255, 255, .8);
+    width: 3rem;
+}
+
+/* 导航nav */
+.nav_box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.nav {
+    width: 10rem;
+    display: flex;
+    text-align: center;
+    font-size: .35rem;
+    line-height: .6rem;
+    background-color: white;
+}
+
+.nav>div {
+    flex: 1;
+    padding: .4rem 0 0.3rem 0;
+}
+
+.nav_active {
+    color: rgb(62, 181, 117);
+}
+
+/* 导航nav */
+/* 主体 */
+.bodyPart {
+    margin-top: 4rem;
+    margin-bottom: 2.2rem;
+    overflow: scroll;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 9.6rem;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0;
+    border-radius: .3rem;
+    margin-top: .2rem;
+    overflow: hidden;
+}
+
+ul>li {
+    list-style-type: none;
+    height: 2rem;
+}
+
+ul>span {
+    width: 8rem;
+    height: .05rem;
+    background-color: rgb(237, 237, 237);
+    margin-left: 2rem;
+
+}
+
+ul>li:nth-child(1) {
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    font-size: .45rem;
+    line-height: 2rem;
+    text-indent: .53rem;
+}
+
+ul>li:nth-child(1)>div:nth-child(1) {
+    margin-right: 2rem;
+}
+
+ul>li:nth-child(1)>div:nth-child(2)>span:nth-child(1) {
+    margin-right: .3rem;
+}
+
+ul>li:not(:nth-child(1)) {
+    display: flex;
+    position: relative;
+    transition: all .5s;
+}
+
+ul>li:not(:nth-child(1))>div:nth-child(1) {
+    width: 2rem;
+    height: 2rem
+}
+
+ul>li:not(:nth-child(1))>div:nth-child(2) {
+    flex: 5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+ul>li:not(:nth-child(1))>div:nth-child(2)>span {
+    flex: 1;
+    padding-left: .3rem;
+}
+
+/* 消费类型 */
+ul>li:not(:nth-child(1))>div:nth-child(2)>span:nth-child(1) {
+    font-size: .5rem;
+    padding-top: .5rem;
+}
+
+/* 消费类型 */
+/* 消费时间 */
+ul>li:not(:nth-child(1))>div:nth-child(2)>span:nth-child(2) {
+    font-size: .4rem;
+    color: rgb(160, 160, 160);
+}
+
+/* 消费时间 */
+
+/* 消费类型图标 */
+
+
+/* 消费类型图标 */
+/* 消费金额 */
+ul>li:not(:nth-child(1))>div:nth-child(3) {
+    flex: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2rem;
+    font-size: .5rem;
+}
+
+/* 消费金额 */
+/* 主体 */
+
+
+/* 记一笔 */
+.add_bill {
+    width: 3.5rem;
+    height: 1.8rem;
+    position: fixed;
+    bottom: 3rem;
+    right: .3rem;
+    font-size: .5rem;
+    line-height: 1.8rem;
+    color: rgb(62, 181, 117);
+    border-radius: 1rem;
+    text-indent: 1.3rem;
+    background: url(../images/add_bill.png) rgba(255, 255, 255, .7) no-repeat .5rem center/ 20% auto;
+    box-shadow: .04rem .04rem .04rem rgba(0, 0, 0, .1);
+}
+
+/* 记一笔 */
+
+/* 删除 */
+.del {
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+    width: 1.5rem;
+    height: 2rem;
+    background-color: rgb(255, 72, 72);
+    border-radius: .1rem;
+    text-align: center;
+    font-size: .35rem;
+    line-height: 2rem;
+    color: white;
+}
+
+.add_content {
+    width: 10rem;
+    height: 8rem;
+    position: absolute;
+    bottom: -8rem;
+    left: 0;
+    background-color: white;
+    border: 1px #ddd solid;
+    border-radius: .3rem;
+    box-shadow: -0.04rem -0.04rem 0.04rem rgba(19, 239, 33, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all .4s;
+}
+
+.close {
+    width: 1rem;
+    height: 1rem;
+    margin: .2rem;
+    background: url(../images/close.png) no-repeat center/70% auto;
+}
+
+.billType {
+    width: 3rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.billType>div {
+    width: 1.5rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .3rem;
+    text-align: center;
+    color: #333;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: .1rem;
+    margin-left: .4rem;
+}
+
+.inMoney {
+    width: 9rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    border-bottom: 1px #333 solid;
+    display: flex;
+    align-items: center;
+}
+
+.inMoney>input {
+    width: 7rem;
+    height: 1rem;
+    font-size: .6rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-left: .4rem;
+}
+
+.inMoney>span {
+    font-size: .6rem;
+    margin-left: .4rem;
+    font-weight: bold;
+}
+
+.bgcolor_active {
+    background-color: rgba(62, 181, 117, .1) !important;
+    color: rgb(62, 181, 117) !important;
+}
+
+/* 类型 */
+.Type>.TypeContent {
+    display: flex;
+    font-size: .2rem;
+    width: 9rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Type>.TypeContent>div {
+    width: 1rem;
+    height: 2rem;
+    padding-top: 1.3rem;
+    float: left;
+    opacity: .5;
+}
+
+.type1-1 {
+    background: url(../images/type1-1.png) no-repeat center .2rem/80% auto;
+}
+
+.type1-2 {
+    background: url(../images/type1-2.png) no-repeat center .2rem/80% auto;
+}
+
+.type1-3 {
+    background: url(../images/type1-3.png) no-repeat center .2rem/80% auto;
+}
+
+.opt_active {
+    opacity: 1 !important;
+}
+
+.Type>.TypeContent1 {
+    font-size: .2rem;
+    width: 9rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+    overflow: hidden;
+    display: none;
+    text-align: center;
+}
+
+.Type>.TypeContent1>div {
+    width: 1rem;
+    height: 2rem;
+    padding-top: 1.3rem;
+    opacity: .5;
+    float: left;
+}
+
+.type0-1 {
+    background: url(../images/type0-1.png) no-repeat center .2rem/80% auto;
+}
+
+.type0-2 {
+    background: url(../images/type0-2.png) no-repeat center .2rem/80% auto;
+}
+
+.queren {
+    width: 2rem;
+    margin: .2rem auto;
+    height: 1rem;
+    font-size: .35rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: rgb(62, 181, 117);
+    color: white;
+    border-radius: .2rem;
+}

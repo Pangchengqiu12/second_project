@@ -1,0 +1,65 @@
+{
+  "id": "3601611",
+  "name": "moblie_project",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16077883",
+      "name": "统计",
+      "font_class": "tongji1",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "1305485",
+      "name": "消费明细单",
+      "font_class": "xiaofeimingxidan",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "18166279",
+      "name": "手提包,购物袋,应用商店,购物商店,手提袋",
+      "font_class": "handbag",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    },
+    {
+      "icon_id": "7093672",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin1",
+      "unicode": "e71d",
+      "unicode_decimal": 59165
+    },
+    {
+      "icon_id": "765334",
+      "name": "商城",
+      "font_class": "shouye",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "835900",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e8e9",
+      "unicode_decimal": 59625
+    },
+    {
+      "icon_id": "1115839",
+      "name": "统计",
+      "font_class": "tongji",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "8987348",
+      "name": "明细",
+      "font_class": "mingxi",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/* 头部 */
+.header_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    z-index: 2;
+    background-image: linear-gradient(to right, rgb(253, 168, 168), rgb(245, 216, 239));
+}
+
+.header {
+    width: 10rem;
+    display: flex;
+}
+
+.back {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../images/back.png) no-repeat center/80% auto;
+}
+
+.title {
+    line-height: 1.5rem;
+    font-size: .5rem;
+    text-align: center;
+    color: rgb(55, 55, 55);
+    width: 7rem;
+}
+
+/* 头部 */
+
+
+/* 购物车 */
+.bodyPart_box {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.bodyPart>ul {
+    width: 9.6rem;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    border-radius: .2rem;
+    padding: .2rem;
+    overflow: hidden;
+    box-shadow: .04rem .04rem .06rem rgba(250, 168, 168, .2);
+}
+
+.bodyPart>ul>li {
+    transition: all .5s;
+    position: relative;
+}
+
+/* ul>li1店铺名 */
+.bodyPart>ul>li:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+/* ul>li1店铺名 */
+/* ul>li1>div1 选项卡 */
+.bodyPart>ul>li:nth-child(1)>div:nth-child(1) {
+    width: 1rem;
+    height: 1rem;
+    background: url(../images/check.png) no-repeat center/60% auto;
+
+}
+
+.checked_active {
+    background: url(../images/checked.png) no-repeat center/60% auto !important;
+}
+
+.checked_active1 {
+    background: url(../images/checked.png) no-repeat center/60% auto !important;
+}
+
+.checked_active2 {
+    background: url(../images/checked.png) no-repeat center/60% auto !important;
+}
+
+/* ul>li1>div1 选项卡 */
+/* ul>li1>div2 店铺名 */
+.bodyPart>ul>li:nth-child(1)>div:nth-child(2) {
+    width: 8rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .5rem;
+
+}
+
+/* ul>li1>div2 店铺名 */
+/* ul除了第一个li其余的li */
+.bodyPart>ul>li:not(:nth-child(1)) {
+    display: flex;
+    align-items: center;
+}
+
+/* ul除了第一个li其余的li */
+/* ul除了第一个li其余的li>div1 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(1) {
+    width: 1rem;
+    height: 2.5rem;
+    background: url(../images/check.png) no-repeat center/60% auto;
+}
+
+/* ul除了第一个li其余的li>div1 */
+/* ul除了第一个li其余的li>div2 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(2) {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(2)>img {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+input {
+    width: 1rem;
+    height: .8rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: .4rem;
+}
+
+/* ul除了第一个li其余的li>div2 */
+/* ul除了第一个li其余的li>div3 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3) {
+    width: 5.7rem;
+    font-display: flex;
+    flex-direction: column;
+    font-size: .5rem;
+}
+
+/* ul除了第一个li其余的li>div3 */
+/* ul除了第一个li其余的li>div3>div1 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3)>div:nth-child(1) {
+    font-size: .5rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ul除了第一个li其余的li>div3>div1 */
+/* ul除了第一个li其余的li>div3>div2 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3)>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ul除了第一个li其余的li>div3>div2 */
+/* ul除了第一个li其余的li>div3>div2>div1 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3)>div:nth-child(2)>div:nth-child(1) {
+    font-size: .4rem;
+    color: red;
+    line-height: 1rem;
+}
+
+/* ul除了第一个li其余的li>div3>div2>div1 */
+/* ul除了第一个li其余的li>div3>div2>div2 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3)>div:nth-child(2)>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    height: .8rem;
+    border: .0133rem rgb(15, 15, 15) solid;
+    border-radius: .15rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: .8rem;
+}
+
+/* ul除了第一个li其余的li>div3>div2>div2 */
+/* ul除了第一个li其余的li>div3>div2>div2>div1 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    width: .75rem;
+    border-right: .0133rem rgb(15, 15, 15) solid;
+}
+
+/* ul除了第一个li其余的li>div3>div2>div2>div1 */
+/* ul除了第一个li其余的li>div3>div2>div2>div3 */
+.bodyPart>ul>li:not(:nth-child(1))>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3) {
+    width: .75rem;
+    border-left: .0133rem rgb(15, 15, 15) solid;
+}
+
+/* ul除了第一个li其余的li>div3>div2>div2>div3 */
+/* 购物车 */
+
+/* 结算 */
+.accounts_box {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.accounts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkAll {
+    display: flex;
+}
+
+.checkAll>div:nth-child(2) {
+    font-size: .4rem;
+    color: rgb(160, 160, 160);
+    line-height: 2rem;
+}
+
+.check {
+    width: 1rem;
+    height: 2rem;
+    margin-left: .5rem;
+    background: url(../images/check.png) no-repeat center/60% auto;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 3rem;
+    height: 1.2rem;
+    font-size: .5rem;
+    line-height: 1.2rem;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(239, 165, 37), rgb(249, 117, 9));
+    border-radius: .6rem;
+    color: white;
+    margin-right: .2rem;
+}
+
+.totalPrice>span:nth-child(1) {
+    font-size: .4rem;
+    color: rgb(160, 160, 160);
+}
+
+.totalPrice>span:nth-child(2) {
+    font-size: .45rem;
+    color: rgb(253, 100, 5);
+    letter-spacing: -0.0133rem;
+}
+
+.num {
+    font-size: .4rem;
+    color: rgb(160, 160, 160);
+}
+
+.info {
+    margin-right: .2rem;
+}
+
+/* 结算 */
+
+/* 删除 */
+.del {
+    width: 1.5rem;
+    height: 2rem;
+    background-color: rgb(255, 72, 72);
+    line-height: 2rem;
+    font-size: .35rem;
+    text-align: center;
+    color: white;
+    transition: all .5s;
+    position: absolute;
+    top: 0;
+    right: -2.5rem;
+    margin-top: .2rem;
+    border-radius: .1rem;
+}
+
+/* 删除 */
+/* 购买加载 */
+.wait_box {
+    width: 10rem;
+    height: 20rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.wait {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: .4rem;
+    text-align: center;
+    line-height: 1rem;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/loading.png) no-repeat center /100% auto;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
